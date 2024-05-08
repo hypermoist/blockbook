@@ -26,7 +26,7 @@
     "binary_url": "https://github.com/Hemis-Blockchain/Hemis/releases/download/1.1.5/Hemis-Linux.tar.gz",
     "verification_type": "sha256",
     "verification_source": "44d33e8ba7eed6e2bfbde7a2a43101431cedade9e21c67326dd26a9079f233fc",
-    "extract_command": "tar -C backend --strip 1 -xf",
+    "extract_command": "tar -C backend -xf",
     "exclude_files": [
       "Hemis-qt",
       "Hemis-tx"
