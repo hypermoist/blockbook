@@ -266,7 +266,6 @@ func (p *HemisParser) HemisDecodeTransactions(r *bytes.Reader, pver uint32, blk 
 			return err
 		}
 
-		err := p.HemisDecode(&tx, r, pver, enc)
 		if err != nil {
 			return err
 		}
