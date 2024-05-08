@@ -23,9 +23,9 @@
     "package_revision": "satoshilabs-1",
     "system_user": "hemis",
     "version": "1.1.5",
-    "binary_url": "https://github.com/Hemis-Blockchain/Hemis/releases/download/1.1.5/Hemis-Linux.zip",
+    "binary_url": "https://github.com/Hemis-Blockchain/Hemis/releases/download/1.1.5/Hemis-Linux.tar.gz",,
     "verification_type": "sha256",
-    "verification_source": "9ae27287ccfc1d8048d52198eaabb1b6372674973178b3d2253b401f605369d7",
+    "verification_source": "e44fbadc4f28b69cbeefdaf5279a5636370fe9e8c5c3e8573af9e7fa1e85d57f",
     "extract_command": "tar -C backend --strip 1 -xf",
     "exclude_files": [
       "bin/hemis-qt"
