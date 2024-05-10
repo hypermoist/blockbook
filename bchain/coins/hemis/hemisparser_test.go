@@ -135,7 +135,7 @@ func init() {
 				},
 			},
 			{
-				ValueSat: *big.NewInt(8492574960),
+				ValueSat: *big.NewInt(12790000000),
 				N:        1,
 				ScriptPubKey: bchain.ScriptPubKey{
 					Hex: "76a91434d5cd5bc462727c3f7ed1b28a0e3c65b43e5cd588ac",
