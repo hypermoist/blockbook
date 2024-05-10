@@ -41,7 +41,7 @@ func Test_GetAddrDescFromAddress_Mainnet(t *testing.T) {
 			wantErr: false,
 		},
 	}
-	parser := NewPivXParser(GetChainParams("main"), &btc.Configuration{})
+	parser := NewHemisParser(GetChainParams("main"), &btc.Configuration{})
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -277,7 +277,7 @@ func helperLoadBlock(t *testing.T, height int) []byte {
 }
 
 func TestParseBlock(t *testing.T) {
-	p := NewPivXParser(GetChainParams("main"), &btc.Configuration{})
+	p := NewHemisParser(GetChainParams("main"), &btc.Configuration{})
 
 	for height, tb := range testParseBlockTxs {
 		b := helperLoadBlock(t, height)
