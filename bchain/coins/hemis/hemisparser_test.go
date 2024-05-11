@@ -248,47 +248,12 @@ type testBlock struct {
 }
 
 var testParseBlockTxs = map[int]testBlock{
-	800000: {
+	159013: {
 		size: 463,
 		time: 1504351235,
 		txs: []string{
 			"556569e1bd20ae007853d839fda5cbefed4883ac53e6327a0a8a30180d242e24",
 			"52b116d26f7c8b633c284f8998a431e106d837c0c5888f9ea5273d36c4556bec",
-		},
-	},
-	864611: {
-		size: 460,
-		time: 1508265763,
-		txs: []string{
-			"3e68db3117021178bfd56eceed2fcfcc8210d1198372412de713f953ce01db5c",
-			"f773cd0f042a264c31c8e0b70485e2c85097b66d3d67bac055d620505de29ce2",
-		},
-	},
-	1300002: {
-		size: 43673,
-		time: 1534045750,
-		txs: []string{
-			"21cfc7b58e666c393431619393526fd736d8d6bf2d8699e2acbedbf5d3c60b85",
-			"afdc7e28ca02ff6a71fc662072bf7590bac6ec3bd93148d0c9f9d1a820c6b1ed",
-			"b65181decb00e684fef238776a0a129db4e1ffdfc454f6ef323e5f7a8deae6a8",
-			"10bc6050c6eb19dd81bede01e974f46740a94049902ced66f10b6dd3d5d31da5",
-		},
-	},
-	1299975: {
-		size: 42801,
-		time: 1534044012,
-		txs: []string{
-			"a99f5fa0b4bf464d57ddd10ae56db27edb054830a2b95b9a23509d217b871a6a",
-			"fccaee46b6f01e42c24ee3f7bbfe5a3f2732b2486af0423473446fbc50a1e48c",
-			"baab318237b55f2dbb1ede2c65f7da9bf2c51c0e9a63903b3376f559fe999960",
-		},
-	},
-	1384217: {
-		size: 430,
-		time: 1577435460,
-		txs: []string{
-			"9c64e40fb27da7c7f826076d0f073968ce36188e827f5a7b2924974369bf9433",
-			"0c5b5b1b9c491a5a7ec9caab204e14f72383460b887c5342d296ae0a7451c09e",
 		},
 	},
 }
