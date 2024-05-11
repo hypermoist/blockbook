@@ -222,6 +222,7 @@ func Test_UnpackTx(t *testing.T) {
 			want1:   159013,
 			wantErr: false,
 		},
+	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			b, _ := hex.DecodeString(tt.args.packedTx)
