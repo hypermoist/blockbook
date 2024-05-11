@@ -113,7 +113,7 @@ var (
 
 func init() {
 	testTx1 = bchain.Tx{
-		Hex:      "0100000001aec51b66adfa98cc3c40a651083de2a0d0525e2e1e7eb8cf8ae530833c9f972b050000006a47304402205f4bfb6701b6f4060b426df29e74dd7838fbb6aaa34847c56fc170335a3e296502203b48c46910bf2bad4a6aaa2e364938d436dfdee317155329f0309c0435a5faf9012102bed9fe429195cca195c0cfc0ae13fcf6a9985ee636f289a2fa319b4bfc00a940ffffffff02000000000000000000fa4d3eb4020000001976a91434d5cd5bc462727c3f7ed1b28a0e3c65b43e5cd588ac00000000",
+		Hex:      "47304402205f4bfb6701b6f4060b426df29e74dd7838fbb6aaa34847c56fc170335a3e296502203b48c46910bf2bad4a6aaa2e364938d436dfdee317155329f0309c0435a5faf9012102bed9fe429195cca195c0cfc0ae13fcf6a9985ee636f289a2fa319b4bfc00a940",
 		Txid:     "64f626e9f7ff3d37c1332f138f4abbb3624678e63f23111539cc4e385ac38655",
 		LockTime: 0,
 		Vin: []bchain.Vin{
@@ -121,7 +121,7 @@ func init() {
 				ScriptSig: bchain.ScriptSig{
 					Hex: "47304402205f4bfb6701b6f4060b426df29e74dd7838fbb6aaa34847c56fc170335a3e296502203b48c46910bf2bad4a6aaa2e364938d436dfdee317155329f0309c0435a5faf9012102bed9fe429195cca195c0cfc0ae13fcf6a9985ee636f289a2fa319b4bfc00a940",
 				},
-				Txid:     "400522dec366e254b337f230794c4e824c7d23a01f8c1782c42a956624af9d85",
+				Txid:     "2b979f3c8330e58acfb87e1e2e5e52d0a0e23d0851a6403ccc98faad661bc5ae",
 				Vout:     5,
 				Sequence: 4294967295,
 			},
@@ -168,7 +168,7 @@ func Test_PackTx(t *testing.T) {
 			args: args{
 				tx:        testTx1,
 				height:    159013,
-				blockTime: 1715323245,
+				blockTime: 1715322960,
 				parser:    NewHemisParser(GetChainParams("main"), &btc.Configuration{}),
 			},
 			want:    testTxPacked1,
@@ -240,7 +240,7 @@ type testBlock struct {
 var testParseBlockTxs = map[int]testBlock{
 	159013: {
 		size: 449,
-		time: 1715323245,
+		time: 1715322960,
 		txs: []string{
 			"62b30b5b09da27ee57631b142fe9a0e87e098438710776ab01b617ee4939bee2",
 			"64f626e9f7ff3d37c1332f138f4abbb3624678e63f23111539cc4e385ac38655",
