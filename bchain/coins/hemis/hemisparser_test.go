@@ -200,7 +200,7 @@ func Test_PackTx(t *testing.T) {
 				tx:        testTx2,
 				height:    409054,
 				blockTime: 1562853038,
-				parser:    NewDiviParser(GetChainParams("main"), &btc.Configuration{}),
+				parser:    NewHemisParser(GetChainParams("main"), &btc.Configuration{}),
 			},
 			want:    testTxPacked2,
 			wantErr: false,
