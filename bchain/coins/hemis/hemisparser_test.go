@@ -78,7 +78,7 @@ func Test_GetAddressesFromAddrDesc(t *testing.T) {
 		},
 		{
 			name:    "pubkey",
-			args:    args{script: "03a8bb91411c991859d89415db9748f03ca2efc526004fcf52171225650745e31a"},
+			args:    args{script: "76a91498833c37aabb0d983c94370ed5450ed55d41b67888ac"},
 			want:    []string{"HUMhGKdTEG5JasTo4UqHGXFXoWMRfM5Ux2"},
 			want2:   false,
 			wantErr: false,
