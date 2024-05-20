@@ -6,7 +6,7 @@
     "alias": "hemis"
   },
   "ports": {
-    "backend_rpc": 49165,
+    "backend_rpc": 51473,
     "backend_message_queue": 38400,
     "blockbook_internal": 9100,
     "blockbook_public": 9200
